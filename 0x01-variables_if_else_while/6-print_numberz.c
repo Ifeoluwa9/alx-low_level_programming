@@ -6,7 +6,8 @@
  * Description: using the main function
  * this program prints "Programmimg is positive, zero, or negative
  * Return: 0
- */
+ */ 
+
  int main(void)
 {
 	int n;
@@ -15,6 +16,6 @@
 	{
 		putchar(n);
 	}
-	putchar('\n')
+	putchar('\n');
 		return (0);
 }
