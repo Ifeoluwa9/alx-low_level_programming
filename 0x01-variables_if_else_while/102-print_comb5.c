@@ -23,7 +23,8 @@ int main(void)
 				if (x != 98 || y != 99)
 				{
 					putchar(',');
-					putchar(' ');
+
+ 					putchar(' ');
 				}
 			}
 		}
