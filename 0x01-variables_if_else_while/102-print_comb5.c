@@ -22,9 +22,8 @@ int main(void)
 				putchar((y % 10) + 48);
 				if (x != 98 || y != 99)
 				{
-					putchar(',');
-
- 					putchar(' ');
+					putchar(' , ');
+					putchar(' ');
 				}
 			}
 		}
@@ -32,3 +31,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
