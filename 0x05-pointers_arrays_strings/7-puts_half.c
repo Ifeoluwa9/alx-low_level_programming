@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * puts_half -prints a string
+ * puts_half - prints a string
  * @str: string to print
  *
  * Return: nothing
