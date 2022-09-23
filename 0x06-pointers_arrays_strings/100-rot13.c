@@ -8,20 +8,21 @@
  */
 char *rot13(char *s)
 {
-	int i, j;
-	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+	int stringCount, rotate;
+	char x[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-for (i = 0; *(s + 1); i++)
-{
-for (j = 0; j < 52; j++)
-{
-if (a[j] == *(s + 1))
-{
-*(s + 1) = b[j];
-break;
-}
-}
-}
-return (s);
+	char y[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L','M'};
+
+	for (stringCount = 0; s[stringCount] != '\0'; stringCount++)
+	{
+		for (rotate = 0; rotate < 53; rotate++)
+		{
+			if (x[rotate] == s[stringCount])
+			{
+				s[stringCount] = y[rotate];
+				break;
+			}
+		}
+	}
+	return (s);
 }
