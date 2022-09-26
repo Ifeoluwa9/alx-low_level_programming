@@ -9,7 +9,7 @@
 int _putchar(char);
 char *_memset(char *s, char b, unsignd int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
-char *_strchr(char *S, char c);
+char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *strstr(char *haystack, char *needle);
