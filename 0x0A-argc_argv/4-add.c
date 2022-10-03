@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <type.h>
+#include <ctype.h>
 
 /**
  * main - adds numbers
  * @argc: number of arguments passed to the function
- * @argv:margument vector of pointers to strings
+ * @argv: argument vector of pointers to strings
  *
  * Return: 0 if no errors, else 1
  */
