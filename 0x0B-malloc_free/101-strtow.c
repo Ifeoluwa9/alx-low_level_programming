@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * len - returns length of str
+ * len - returns length of string
  * @str: string to be counted
  *
  * Return: length of the string
