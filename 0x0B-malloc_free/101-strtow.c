@@ -66,7 +66,7 @@ char **strtow(char *str)
 	{
 		for (i = 0; i <= len(str) && words; i++)
 		{
-			if ((str[i] != '') && (str[i] != '\0'))
+			if ((str[i] != ' ') && (str[i] != '\0'))
 				size++;
 			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 			{
