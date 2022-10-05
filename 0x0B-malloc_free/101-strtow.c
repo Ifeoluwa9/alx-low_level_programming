@@ -10,6 +10,7 @@
 int len(char *str)
 {
 	int len = 0;
+
 	if (str != NULL)
 	{
 		while (str[len])
@@ -28,11 +29,12 @@ int num_words(char *str)
 {
 	int i = 0, words = 0;
 
-	while (i <=mlen(str))
+	while (i <= len(str))
 	{
 		if ((str[i] != ' ') && (str[i] != '\0'))
 		{
 			i++;
+		}
 			else if (((str[i] == ' ') || str[i] == '\0')) && i && (str[i - 1] != ' ')
 			{
 				words += 1;
