@@ -47,7 +47,8 @@ char *argstostr(int ac, char **av)
 						new_string[temp + j] = '\n';
 						temp += (j + 1);
 						k++;
-					}new_string[temp] = '\0';
+					}
+					new_string[temp] = '\0';
 				}
 				else
 				{
