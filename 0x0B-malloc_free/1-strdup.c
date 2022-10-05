@@ -2,18 +2,18 @@
 
 /**
  * _strdup - returns a pointer to a newly allocated
- * space in memory, which contains a copy of the 
- * string given as a parameter.
+ *space in memory, which contains a copy of the
+ *string given as a parameter.
  * @str: string to be copied
  *
  * Return: NULL in case of error, pointer to allocated 
- * space
+ *space
  */
 
 char *_strdup(char *str)
 {
 	char *cpy;
-	int index, len ;
+	int index, len;
 
 	if (str == NULL)
 		return (NULL);
