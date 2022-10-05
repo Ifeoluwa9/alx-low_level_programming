@@ -6,7 +6,7 @@
  *string given as a parameter.
  * @str: string to be copied
  *
- * Return: NULL in case of error, pointer to allocated 
+ *Return: NULL in case of error, pointer to allocated
  *space
  */
 
