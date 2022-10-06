@@ -36,7 +36,7 @@ void _print(char *str, int l)
  *
  * Return: pointer to dest, or NULL on failure
  */
-char *mul(charn, char *num, int num_index, char *dest, int dest_index)
+char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 {
 	int j, k, mul, mulrem, add, addrem;
 
@@ -64,7 +64,7 @@ char *mul(charn, char *num, int num_index, char *dest, int dest_index)
 
 /**
  * check_for_digits - checks the arguments to ensure they are digits
- * @ac: pointer to arguments
+ * @av: pointer to arguments
  *
  * Return: 0 if digits , 1 if not
  */
@@ -83,7 +83,8 @@ int check_for_digits(char **av)
 	return (0);
 }
 
-/**init - initializes a string
+/**
+ * init - initializes a string
  * @str: string to initialize
  * @l: lemgth of string
  *
@@ -133,7 +134,7 @@ int main(int argc, char *argv[])
 	init(a, ln - 1);
 	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
-		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln -2) - 1);
+		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - 1);
 		if (t == NULL)
 		{
 			for (ti = 0; e[ti]; ti++)
