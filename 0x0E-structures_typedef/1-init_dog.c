@@ -1,11 +1,11 @@
 #include "dog.h"
 
 /**
- * init_do - initializes a structure of type dog
+ * init_dog - initializes a structure of type dog
  * @d: pointer to structure
  * @name: pointer to the name of the dog
  * @age: age of dog
- * @ownner: pointer to owner of dog
+ * @owner: pointer to owner of dog
  *
  * Return: void
  */
