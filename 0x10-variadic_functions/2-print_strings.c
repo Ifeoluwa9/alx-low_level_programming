@@ -5,12 +5,11 @@
 /**
  * print_strings - prints strings, followed by a new line
  * @separator: separator to print between the strings
- * @n
- * ; number of strings to print
+ * @n: number of strings to print
  *
  * Return: void
  */
-void print_strings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...);
 {
 	unsigned int i;
 	char *str;
