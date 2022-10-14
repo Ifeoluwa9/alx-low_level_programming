@@ -8,7 +8,7 @@
  * Return: The sum of a and b
  */
 
-int op_add(int a, intb)
+int op_add(int a, int b)
 {
 	return (a + b);
 }
@@ -22,7 +22,7 @@ int op_add(int a, intb)
 
 int op_sub(int a, int b)
 {
-	return (a - b)
+	return (a - b);
 }
 
 /**
